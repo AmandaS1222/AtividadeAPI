@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo de Filmes da Barbie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="background"></div>
+
+  <div class="container">
+    <h1>Filmes da Barbie</h1>
+    <form id="formPesquisa">
+      <input type="text" id="inputPesquisa" placeholder="Digite o nome do filme" />
+      <button type="submit">Pesquisar</button>
+    </form>
+
+    <div id="listaFilmes"></div>
+  </div>
+
+  <div id="modalFilme" class="modal">
+    <div class="modal-conteudo">
+      <span id="fecharModal" class="fechar">&times;</span>
+      <div class="modal-corpo">
+        <img id="modalImagem" src="" alt="Imagem do Filme" />
+        <div class="modal-texto">
+          <h2 id="modalTitulo"></h2>
+          <p id="modalDescricao"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
